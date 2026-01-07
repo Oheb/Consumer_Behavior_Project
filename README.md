@@ -1,0 +1,69 @@
+# 🛒 Ecommerce Behavioral Analytics & Predictive Modeling
+
+**Turning raw shopping data into actionable customer intelligence.**
+
+## Project Overview
+This project moves beyond standard reporting to answer the critical question: *"Who are our most valuable customers, and how do we find more of them?"*
+
+Using a dataset of 1,000 ecommerce transactions, we performed a deep-dive analysis to identify "Whale" customers (Top 10% by value), debug the underperforming Loyalty Program, and build a **Random Forest Classifier** that predicts high-value potential in new users with demographic data.
+
+### Key Objectives
+1.  **Solve the "Loyalty Paradox":** Understand why non-members are outspending loyalty members.
+2.  **Profile the "Whales":** Identify the specific traits (Age, Location, Category) of the top 10% of spenders.
+3.  **Predictive Targeting:** Create a "Consumer Dictionary" that assigns a *High-Value Propensity Score* to every customer.
+
+---
+
+## Tech Stack
+* **Python 3.9+**
+* **Pandas:** For high-performance data manipulation and cleaning.
+* **Seaborn & Matplotlib:** For statistical data visualization.
+* **Scikit-Learn:** For building the Random Forest classification model.
+* **JSON:** For structuring the final predictive consumer profiles.
+
+---
+
+## Key Insights & Visualizations
+
+### 1. The Loyalty Paradox
+* **Observation:** Loyalty Program members have a lower Lifetime Value ($1,797) compared to Non-Members ($2,020).
+* **Root Cause:** The data reveals that members are "Discount Seekers" (54% discount usage) who make frequent but smaller purchases. Non-members are organic high-spenders who buy full-priced items.
+* **Strategy:** Shift loyalty rewards from "Frequency-based" to "Spend-tier based."
+
+### 2. The "Whale" Habitat (Top 10% Customers)
+* **Demographics:** The most valuable customers are **Females aged 30-35**.
+* **Top Categories:** They predominantly buy **Baby Products, Clothing, and Electronics**.
+* **Shopping Behavior:** They are "Omnichannel" shoppers, preferring a mix of Online and Offline channels rather than one exclusively.
+
+### 3. Correlation Myths Busted
+* **Age vs. Spend:** There is **zero correlation (R² = 0.0003)** between age and spending power. A 20-year-old is just as likely to drop $500 as a 50-year-old.
+* **Income Level:** Surprisingly, High Income and Middle Income customers have nearly identical average order values (~$275).
+
+---
+
+## The Predictive Model
+
+We built a **Random Forest Classifier** to score every customer on their likelihood to become a "Whale."
+
+* **Features Used:** `Age`, `Gender`, `Income_Level`, `Education_Level`.
+* **Target Variable:** `is_high_value` (Top 25% of Purchase Amount).
+* **Output:** A propensity score (0.00 to 1.00).
+
+### Sample Output (from `consumer_dictionary`)
+The final output is a structured dictionary that can be fed into a CRM or Marketing Automation tool:
+
+```json
+"37-611-6911": {
+    "Profile": {
+        "Age": 22,
+        "Gender": "Female"
+    },
+    "Metrics": {
+        "Top_Cat": "Gardening & Outdoors",
+        "Spend": 333.8
+    },
+    "Predictions": {
+        "Whale_Propensity": 0.023,
+        "Action": "Standard Marketing"
+    }
+}
