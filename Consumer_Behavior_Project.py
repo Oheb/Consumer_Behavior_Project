@@ -2,10 +2,18 @@
  "cells": [
   {
    "cell_type": "markdown",
+   "id": "d3e8086a-44a7-49aa-a369-ed4165c8692b",
+   "metadata": {},
+   "source": [
+    "# Consumer Behavior Ecommerce Analysis Project by Daniel Ohebshalom"
+   ]
+  },
+  {
+   "cell_type": "markdown",
    "id": "4c46df3f-8434-4073-b356-2d1603231144",
    "metadata": {},
    "source": [
-    "# Package Import"
+    "## Package Import"
    ]
   },
   {
