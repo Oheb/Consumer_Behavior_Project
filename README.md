@@ -10,7 +10,7 @@ Using a dataset of 1,000 ecommerce transactions, we performed a deep-dive analys
 ### Key Objectives
 1.  **Solve the "Loyalty Paradox":** Understand why non-members are outspending loyalty members.
 2.  **Profile the "Whales":** Identify the specific traits (Age, Location, Category) of the top 10% of spenders.
-3.  **Predictive Targeting:** Create a "Consumer Dictionary" that assigns a *High-Value Propensity Score* to every customer.
+3.  **Predictive Targeting:** Create a "Consumer Dictionary" that assigns a *High-Value Propensity Score* to every customer and notes down the top 25% of spenders to gauge mode effectively.
 
 ---
 
