@@ -19,7 +19,7 @@ Using a dataset of 1,000 ecommerce transactions, we performed a deep-dive analys
 * **Pandas:** For high-performance data manipulation and cleaning.
 * **Seaborn & Matplotlib:** For statistical data visualization.
 * **Scikit-Learn:** For building the Random Forest classification model.
-* **JSON:** For structuring the final predictive consumer profiles.
+* **JSON & Pprint:** For structuring the final predictive consumer profiles.
 
 ---
 
