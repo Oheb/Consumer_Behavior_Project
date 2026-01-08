@@ -206,47 +206,32 @@ Instead of a static CSV, the final output of this project is a structured **JSON
 ## 🚀 How to Run
 
 
-
-1. **Clone the Repository**
+1. **Install Requirements**
 
 ```bash
 
-git clone https://github.com/yourusername/consumer-behavior-analytics.git
-
-
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
 
 ```
 
 
 
-
-
-2. **Install Requirements**
-
-```bash
-
-pip install pandas numpy matplotlib seaborn plotly scikit-learn
-
-
-
-```
-
-
-
-
-
-3. **Launch the Notebook**
+2. **Launch the Notebook**
 
 ```bash
 
 jupyter notebook Consumer_Behavior_Project.ipynb
 
-
-
 ```
 
 
+3. **Download the CSV Used in This Project**
 
+This can be found [here](https://www.kaggle.com/datasets/salahuddinahmedshuvo/ecommerce-consumer-behavior-analysis-data?resource=download) (Kaggle account may be required)
 
 
 
